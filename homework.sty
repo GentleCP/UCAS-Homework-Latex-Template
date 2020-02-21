@@ -1,0 +1,142 @@
+% 模板的风格配置文件
+
+%
+% 包的引入
+%
+\usepackage{fancyhdr}  % header，footer的设置
+\usepackage{extramarks}
+\usepackage{amsmath}  % 数学公式
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}  % 绘图
+\usepackage{algorithm}  % 算法
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}  % 伪代码
+\usepackage[UTF8]{ctex}  % 支持中文
+\usepackage{multirow}  % 表格多行
+\usepackage{float}  % 强制图片在当前位置
+\usepackage{enumitem}  % 列表缩进 
+\usepackage{listings}  % 代码块
+\usepackage{fontspec}  % 字体
+\usepackage{indentfirst}  % 首行自动缩进
+
+\usetikzlibrary{automata,positioning}
+
+
+%
+% 设置页面
+%
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+\setlength{\parindent}{2em}  % 首行缩进两个中文
+
+%
+% 用fancyhdr设置header和footer
+% 
+\pagestyle{fancy}
+\lhead{\hmwkClass\ : \hmwkTitle}
+\rhead{\hmwkAuthorName}
+%\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+%\chead{\hmwkClass\ : \hmwkTitle}
+%\rhead{\firstxmark}
+%\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+% 设置代码块字体
+\setmonofont{Consolas}
+
+%
+% %%%%%%%%%%%%%%   自定义的命令   %%%%%%%%%%%%%%
+%
+
+% Homework Problem 命令的相关设置
+\newcommand{\enterProblemHeader}[1]{
+	\nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+	\nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+	\nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+	\stepcounter{#1}
+	\nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+% Homework Problem Environment
+% 该环境可以获取一个参数，用于指定问题的编号。如果给定了该参数，则使用它，否则的话会自动生成。
+\newenvironment{homeworkProblem}[1][-1]{
+	\ifnum#1>0
+	\setcounter{homeworkProblemCounter}{#1}
+	\fi
+	\section{Problem \arabic{homeworkProblemCounter}}
+	\setcounter{partCounter}{1}
+	\enterProblemHeader{homeworkProblemCounter}
+}{
+	\exitProblemHeader{homeworkProblemCounter}
+}
+
+% 封面的相关命令设置
+% 	- 标题
+% 	- 子标题
+% 	- 课程名称
+% 	- 老师
+% 	- 学生信息
+ \newcommand{\hmwkTitle}{标题}
+%\newcommand{\hmwkDueDate}{November 18, 2019}
+\newcommand{\hmwkSubTitle}{子标题}
+\newcommand{\hmwkClass}{《报告名称》}
+\newcommand{\hmwkCompleteTime}{Feb 21, 2020}
+\newcommand{\hmwkClassInstructor}{Professor：CP}
+\newcommand{\hmwkAuthorName}{\textbf{GentleCP} }
+
+% 文档中有用的命令
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+% 表格单元格中换行
+% 使用：\tabincell{c}{单元格内容1 \\ 单元格内容2}
+% 		- c表示居中
+%		- \\ 表示换行
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+
+%
+% 将算法中的\Require替换为Input，将\Ensure替换为Output
+%
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm
+

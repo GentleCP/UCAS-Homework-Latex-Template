@@ -1,0 +1,78 @@
+\begin{thebibliography}{10}
+
+\bibitem{cup2007available}
+KDD Cup.
+\newblock Available on: http://kdd. ics. uci. edu/databases/kddcup99/kddcup99.
+  html, 2007.
+
+\bibitem{tavallaee2009detailed}
+Mahbod Tavallaee, Ebrahim Bagheri, Wei Lu, and Ali~A Ghorbani.
+\newblock A detailed analysis of the kdd cup 99 data set.
+\newblock pages 1--6, 2009.
+
+\bibitem{berman2019survey}
+Daniel~S Berman, Anna~L Buczak, Jeffrey~S Chavis, and Cherita~L Corbett.
+\newblock A survey of deep learning methods for cyber security.
+\newblock {\em Information}, 10(4):122, 2019.
+
+\bibitem{becher2019law}
+Shmuel~I Becher and Uri Benoliel.
+\newblock Law in books and law in action: The readability of privacy policies
+  and the gdpr.
+\newblock {\em CONSUMER LAW \& ECONOMICS, Klaus Mathis \& Avishalom Tor, eds.,
+  Springer (forthcoming, 2019)}, 2019.
+
+\bibitem{zhou2012dissecting}
+Yajin Zhou and Xuxian Jiang.
+\newblock Dissecting android malware: Characterization and evolution.
+\newblock pages 95--109, 2012.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock pages 1097--1105, 2012.
+
+\bibitem{gers1999learning}
+Felix~A Gers, J{\"u}rgen Schmidhuber, and Fred Cummins.
+\newblock Learning to forget: Continual prediction with lstm.
+\newblock 1999.
+
+\bibitem{goodfellow2014generative}
+Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
+  Sherjil Ozair, Aaron Courville, and Yoshua Bengio.
+\newblock Generative adversarial nets.
+\newblock pages 2672--2680, 2014.
+
+\bibitem{wang2017malware}
+Wei Wang, Ming Zhu, Xuewen Zeng, Xiaozhou Ye, and Yiqiang Sheng.
+\newblock Malware traffic classification using convolutional neural network for
+  representation learning.
+\newblock pages 712--717, 2017.
+
+\bibitem{lecun1995learning}
+Yann LeCun, LD~Jackel, L{\'e}on Bottou, Corinna Cortes, John~S Denker, Harris
+  Drucker, Isabelle Guyon, Urs~A Muller, Eduard Sackinger, Patrice Simard,
+  et~al.
+\newblock Learning algorithms for classification: A comparison on handwritten
+  digit recognition.
+\newblock {\em Neural networks: the statistical mechanics perspective},
+  261:276, 1995.
+
+\bibitem{torres2016analysis}
+Pablo Torres, Carlos Catania, Sebastian Garcia, and Carlos~Garcia Garino.
+\newblock An analysis of recurrent neural networks for botnet detection
+  behavior.
+\newblock pages 1--6, 2016.
+
+\bibitem{woodbridge2016predicting}
+Jonathan Woodbridge, Hyrum~S Anderson, Anjum Ahuja, and Daniel Grant.
+\newblock Predicting domain generation algorithms with long short-term memory
+  networks.
+\newblock {\em arXiv preprint arXiv:1611.00791}, 2016.
+
+\bibitem{mac2017dga}
+Hieu Mac, Duc Tran, Van Tong, Linh~Giang Nguyen, and Hai~Anh Tran.
+\newblock Dga botnet detection using supervised learning methods.
+\newblock pages 211--218, 2017.
+
+\end{thebibliography}
